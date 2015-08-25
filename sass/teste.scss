@@ -1,7 +1,91 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #666;
+$color: #fff;
+$blue: #708c87;
+$font: Arial, Helvetica, sans-serif;
+$font-size: 12px;
+$center-margin: 0 auto;
 
+@mixin border-radius($radius: 5px) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+		    border-radius: $radius; 
+}
+
+@mixin triangle($width, $dir, $color) {
+	@if $dir == up {
+		border-left: $width/2 solid transparent;
+		border-right: $width/2 solid transparent;
+
+		border-bottom: $width/2 solid $color;
+	} @else if $dir == down {
+		border-left: $width/2 solid transparent;
+		border-right: $width/2 solid transparent;
+
+		border-top: $width/2 solid $color;
+	} @else if $dir == right {
+		border-top: $width solid transparent;
+		border-bottom: $width solid transparent;
+
+		border-left: $width solid $color;
+	} @else if $dir == left {
+		border-top: $width solid transparent;
+		border-bottom: $width solid transparent;
+
+		border-left: $width solid $color;
+	}
+
+}
+.triangle {
+		width: 0;
+		height: 0;
+		display: block;
+	}
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+	background: #f2f2f2;
+	font-family: $font;
+}
+
+
+p {
+	color: darken($color, 70%);
+	font-size: $font-size;
+}
+
+small {
+	display: block;
+	text-align: center;
+	padding: 10px;
+
+	a { color: red; }
+
+	.triangle {
+		@include triangle(10px, right, $blue);
+	}
+}
+
+.wrapper {
+	width: 960px;
+	margin: $center-margin;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+	@include border-radius;
+
+	h1 { 
+		background: #eee;
+		text-align: center; 
+		color: $blue;
+		@include border-radius(10px);
+	}
+	
+	h2 {
+		color: lighten($blue, 10%);
+	}
+
+	a {
+		color: $blue;
+		text-decoration: none;
+	}
+	a:hover {
+		color: darken($blue, 25%);
+	}
 }

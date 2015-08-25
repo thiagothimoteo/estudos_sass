@@ -1,5 +1,69 @@
-/* line 4, ../sass/teste.scss */
+/* line 37, ../sass/teste.scss */
+.triangle {
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+/* line 42, ../sass/teste.scss */
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #666;
+  background: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 48, ../sass/teste.scss */
+p {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+/* line 53, ../sass/teste.scss */
+small {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+/* line 58, ../sass/teste.scss */
+small a {
+  color: red;
+}
+/* line 60, ../sass/teste.scss */
+small .triangle {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #708c87;
+}
+
+/* line 65, ../sass/teste.scss */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 73, ../sass/teste.scss */
+.wrapper h1 {
+  background: #eee;
+  text-align: center;
+  color: #708c87;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 80, ../sass/teste.scss */
+.wrapper h2 {
+  color: #8ca39f;
+}
+/* line 84, ../sass/teste.scss */
+.wrapper a {
+  color: #708c87;
+  text-decoration: none;
+}
+/* line 88, ../sass/teste.scss */
+.wrapper a:hover {
+  color: #374543;
 }
