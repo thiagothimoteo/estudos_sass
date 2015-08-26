@@ -1,69 +1,95 @@
-/* line 37, ../sass/teste.scss */
+/* line 45, ../sass/teste.scss */
 .triangle {
   width: 0;
   height: 0;
   display: block;
 }
 
-/* line 42, ../sass/teste.scss */
-body {
-  background: #f2f2f2;
-  font-family: Arial, Helvetica, sans-serif;
+/* line 51, ../sass/teste.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
 }
 
-/* line 48, ../sass/teste.scss */
+/* line 59, ../sass/teste.scss */
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* line 64, ../sass/teste.scss */
 p {
   color: #4d4d4d;
   font-size: 12px;
 }
 
-/* line 53, ../sass/teste.scss */
+/* line 69, ../sass/teste.scss */
 small {
   display: block;
   text-align: center;
   padding: 10px;
 }
-/* line 58, ../sass/teste.scss */
+/* line 74, ../sass/teste.scss */
 small a {
-  color: red;
+  color: #f00;
 }
-/* line 60, ../sass/teste.scss */
+/* line 76, ../sass/teste.scss */
 small .triangle {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #708c87;
 }
 
-/* line 65, ../sass/teste.scss */
+/* line 81, ../sass/teste.scss */
+header {
+  background-image: linear-gradient(to right, #3CA55C, #F9D423);
+}
+/* line 84, ../sass/teste.scss */
+header h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 300;
+}
+/* line 89, ../sass/teste.scss */
+header #logo {
+  text-align: center;
+  margin: 20px;
+}
+/* line 93, ../sass/teste.scss */
+header #logo span {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 35px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* line 107, ../sass/teste.scss */
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  background: #fff;
   padding: 20px;
-  border: 1px solid #ccc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 73, ../sass/teste.scss */
+/* line 113, ../sass/teste.scss */
 .wrapper h1 {
-  background: #eee;
   text-align: center;
-  color: #708c87;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
 }
-/* line 80, ../sass/teste.scss */
+/* line 115, ../sass/teste.scss */
 .wrapper h2 {
   color: #8ca39f;
 }
-/* line 84, ../sass/teste.scss */
+/* line 119, ../sass/teste.scss */
 .wrapper a {
   color: #708c87;
   text-decoration: none;
 }
-/* line 88, ../sass/teste.scss */
+/* line 123, ../sass/teste.scss */
 .wrapper a:hover {
   color: #374543;
 }

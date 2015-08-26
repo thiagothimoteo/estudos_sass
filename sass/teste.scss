@@ -1,6 +1,6 @@
 $color: #fff;
 $blue: #708c87;
-$font: Arial, Helvetica, sans-serif;
+$font: 'Open Sans', Arial, Helvetica, sans-serif;
 $font-size: 12px;
 $center-margin: 0 auto;
 
@@ -9,6 +9,13 @@ $center-margin: 0 auto;
 	   -moz-border-radius: $radius;
 		    border-radius: $radius; 
 }
+
+@mixin rotate($rotate: (90deg)) {
+	-webkit-transform: rotate($rotate);
+	   	-ms-transform: rotate($rotate);
+		    transform: rotate($rotate); 
+}
+
 
 @mixin triangle($width, $dir, $color) {
 	@if $dir == up {
@@ -34,13 +41,22 @@ $center-margin: 0 auto;
 	}
 
 }
+
 .triangle {
 		width: 0;
 		height: 0;
 		display: block;
 	}
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+
 body {
-	background: #f2f2f2;
 	font-family: $font;
 }
 
@@ -55,27 +71,46 @@ small {
 	text-align: center;
 	padding: 10px;
 
-	a { color: red; }
+	a { color: #f00; }
 
 	.triangle {
 		@include triangle(10px, right, $blue);
 	}
 }
 
+header {
+	background-image: linear-gradient( to right, #3CA55C, #F9D423);
+
+	h1 { 
+		color: #fff;
+		font-size: 35px;
+		font-weight: 300;
+	}
+	#logo {
+		text-align: center;
+		margin: 20px;
+
+		span {
+			width: 65px;
+			height: 65px;
+			display: inline-block;
+			padding: 10px 20px;
+			font-size: 35px;
+			color: #fff;
+			border: 2px solid #fff;
+		}
+	
+	}
+}
+
+
 .wrapper {
 	width: 960px;
 	margin: $center-margin;
-	background: #fff;
 	padding: 20px;
-	border: 1px solid #ccc;
 	@include border-radius;
 
-	h1 { 
-		background: #eee;
-		text-align: center; 
-		color: $blue;
-		@include border-radius(10px);
-	}
+	h1 { text-align: center; }
 	
 	h2 {
 		color: lighten($blue, 10%);
