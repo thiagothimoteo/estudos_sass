@@ -1,5 +1,7 @@
 $color: #fff;
 $blue: #708c87;
+$green: #3CA55C;
+$lemon: #F9D423;
 $font: 'Open Sans', Arial, Helvetica, sans-serif;
 $font-size: 12px;
 $center-margin: 0 auto;
@@ -58,46 +60,60 @@ $center-margin: 0 auto;
 
 body {
 	font-family: $font;
-}
 
+	p {
+		color: #777;
+		font-size: $font-size;
+	}
 
-p {
-	color: darken($color, 70%);
-	font-size: $font-size;
-}
+	small {
+		display: block;
+		text-align: center;
+		padding: 10px;
 
-small {
-	display: block;
-	text-align: center;
-	padding: 10px;
+		a { color: #f00; }
 
-	a { color: #f00; }
-
-	.triangle {
-		@include triangle(10px, right, $blue);
+		.triangle {
+			@include triangle(10px, right, $blue);
+		}
 	}
 }
 
+
 header {
-	background-image: linear-gradient( to right, #3CA55C, #F9D423);
+	background-image: linear-gradient( to right, $green, $lemon);
 
 	h1 { 
 		color: #fff;
-		font-size: 35px;
+		font-size: 40px;
 		font-weight: 300;
+		margin: 40px 0;
+		text-shadow: 1px 1px #579837;
 	}
+	a.light-btn {
+		display: block;
+		max-width: 215px;
+		margin: 30px auto;
+		padding: 10px 15px;
+		text-align: center;
+		color: $green;
+		background-color: #fff;
+		@include border-radius(35px);
+	}	
+
 	#logo {
 		text-align: center;
-		margin: 20px;
+		margin: 40px 0;
 
 		span {
 			width: 65px;
 			height: 65px;
 			display: inline-block;
-			padding: 10px 20px;
 			font-size: 35px;
+			line-height: 61px;
 			color: #fff;
 			border: 2px solid #fff;
+			@include border-radius(100%);
 		}
 	
 	}
