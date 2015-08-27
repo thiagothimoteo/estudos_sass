@@ -1,49 +1,49 @@
-/* line 47, ../sass/teste.scss */
+/* line 50, ../sass/style.scss */
 .triangle {
   width: 0;
   height: 0;
   display: block;
 }
 
-/* line 53, ../sass/teste.scss */
+/* line 56, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  vertical-align: middle;
 }
 
-/* line 61, ../sass/teste.scss */
+/* line 63, ../sass/style.scss */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
-/* line 64, ../sass/teste.scss */
+/* line 66, ../sass/style.scss */
 body p {
   color: #777;
-  font-size: 12px;
+  font-size: 14px;
 }
-/* line 69, ../sass/teste.scss */
+/* line 71, ../sass/style.scss */
 body small {
   display: block;
   text-align: center;
   padding: 10px;
 }
-/* line 74, ../sass/teste.scss */
+/* line 76, ../sass/style.scss */
 body small a {
   color: #f00;
 }
-/* line 76, ../sass/teste.scss */
+/* line 78, ../sass/style.scss */
 body small .triangle {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #708c87;
+  border-left: 10px solid #3CA55C;
 }
 
-/* line 83, ../sass/teste.scss */
+/* line 85, ../sass/style.scss */
 header {
   background-image: linear-gradient(to right, #3CA55C, #F9D423);
+  box-shadow: 0 -4px 6px -4px #2e8047 inset;
 }
-/* line 86, ../sass/teste.scss */
+/* line 89, ../sass/style.scss */
 header h1 {
   color: #fff;
   font-size: 40px;
@@ -51,25 +51,34 @@ header h1 {
   margin: 40px 0;
   text-shadow: 1px 1px #579837;
 }
-/* line 93, ../sass/teste.scss */
+/* line 96, ../sass/style.scss */
 header a.light-btn {
   display: block;
   max-width: 215px;
   margin: 30px auto;
   padding: 10px 15px;
   text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+/* line 106, ../sass/style.scss */
+header a.light-btn:hover {
   color: #3CA55C;
   background-color: #fff;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   border-radius: 35px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
-/* line 104, ../sass/teste.scss */
+/* line 114, ../sass/style.scss */
 header #logo {
   text-align: center;
   margin: 40px 0;
 }
-/* line 108, ../sass/teste.scss */
+/* line 118, ../sass/style.scss */
 header #logo span {
   width: 65px;
   height: 65px;
@@ -83,7 +92,12 @@ header #logo span {
   border-radius: 100%;
 }
 
-/* line 123, ../sass/teste.scss */
+/* line 133, ../sass/style.scss */
+section h2 {
+  margin: 15px 0;
+}
+
+/* line 139, ../sass/style.scss */
 .wrapper {
   width: 960px;
   margin: 0 auto;
@@ -92,20 +106,20 @@ header #logo span {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 129, ../sass/teste.scss */
+/* line 145, ../sass/style.scss */
 .wrapper h1 {
   text-align: center;
 }
-/* line 131, ../sass/teste.scss */
+/* line 147, ../sass/style.scss */
 .wrapper h2 {
-  color: #8ca39f;
+  color: #53c175;
 }
-/* line 135, ../sass/teste.scss */
+/* line 151, ../sass/style.scss */
 .wrapper a {
-  color: #708c87;
+  color: #3CA55C;
   text-decoration: none;
 }
-/* line 139, ../sass/teste.scss */
+/* line 155, ../sass/style.scss */
 .wrapper a:hover {
-  color: #374543;
+  color: #1a4828;
 }
