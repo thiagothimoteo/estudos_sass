@@ -41,9 +41,11 @@ body small .triangle {
 /* line 85, ../sass/style.scss */
 header {
   background-image: linear-gradient(to right, #3CA55C, #F9D423);
+  background-color: #3CA55C;
+  background-attachment: fixed;
   box-shadow: 0 -4px 6px -4px #2e8047 inset;
 }
-/* line 89, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 header h1 {
   color: #fff;
   font-size: 40px;
@@ -51,7 +53,7 @@ header h1 {
   margin: 40px 0;
   text-shadow: 1px 1px #579837;
 }
-/* line 96, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 header a.light-btn {
   display: block;
   max-width: 215px;
@@ -59,11 +61,12 @@ header a.light-btn {
   padding: 10px 15px;
   text-align: center;
   color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
   border: 2px solid #fff;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-/* line 106, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 header a.light-btn:hover {
   color: #3CA55C;
   background-color: #fff;
@@ -73,12 +76,26 @@ header a.light-btn:hover {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 114, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 header #logo {
   text-align: center;
   margin: 40px 0;
 }
-/* line 118, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
+header #logo:hover span {
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* line 128, ../sass/style.scss */
+header #logo:hover span:first-child, header #logo:hover span:last-child {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+/* line 131, ../sass/style.scss */
 header #logo span {
   width: 65px;
   height: 65px;
@@ -92,34 +109,58 @@ header #logo span {
   border-radius: 100%;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 section h2 {
   margin: 15px 0;
 }
 
-/* line 139, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .wrapper {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
   padding: 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 145, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .wrapper h1 {
   text-align: center;
 }
-/* line 147, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .wrapper h2 {
   color: #53c175;
 }
-/* line 151, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .wrapper a {
   color: #3CA55C;
   text-decoration: none;
 }
-/* line 155, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .wrapper a:hover {
   color: #1a4828;
+}
+
+/***ABOUT SOMETHING***/
+/* line 176, ../sass/style.scss */
+#about-something {
+  overflow: auto;
+}
+
+/* line 178, ../sass/style.scss */
+#about-something img {
+  max-width: 175px;
+  float: left;
+  border: 3px solid #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* line 185, ../sass/style.scss */
+#about-something p {
+  float: right;
+  width: 80%;
+  padding: 40px 0;
 }

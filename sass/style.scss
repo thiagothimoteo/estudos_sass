@@ -83,7 +83,11 @@ body {
 
 
 header {
-	background-image: linear-gradient( to right, $green, $lemon);
+	background: {
+		image: linear-gradient( to right, $green, $lemon);
+		color: $green;
+		attachment: fixed;
+	}
 	box-shadow: 0 -4px 6px -4px darken($green, 10%) inset;
 
 	h1 { 
@@ -100,6 +104,7 @@ header {
 		padding: 10px 15px;
 		text-align: center;
 		color: #fff;
+		background-color: rgba(255, 255, 255, .15);
 		border: 2px solid #fff;
 		@include transition(all 0.5s ease-in);
 
@@ -114,6 +119,14 @@ header {
 	#logo {
 		text-align: center;
 		margin: 40px 0;
+
+		&:hover {
+			span { 
+				@include rotate(-360deg);
+				@include transition(all 0.5s ease-out);  
+		}
+			span:first-child, span:last-child { @include rotate(360deg); }
+		}
 
 		span {
 			width: 65px;
@@ -137,7 +150,8 @@ section {
 
 
 .wrapper {
-	width: 960px;
+	width: 100%;
+	max-width: 960px;
 	margin: $center-margin;
 	padding: 20px;
 	@include border-radius;
@@ -155,4 +169,21 @@ section {
 	a:hover {
 		color: darken($green, 25%);
 	}
+}
+
+/***ABOUT SOMETHING***/
+
+#about-something { overflow: auto; }
+
+#about-something img {
+	max-width: 175px;
+	float: left;
+	border: 3px solid #fff;
+	@include border-radius(100%);
+}
+
+#about-something p { 
+	float: right;
+	width: 80%;
+	padding: 40px 0;
 }
