@@ -120,35 +120,36 @@ section h2 {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  overflow: auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 159, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .wrapper h1 {
   text-align: center;
 }
-/* line 161, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .wrapper h2 {
   color: #53c175;
 }
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .wrapper a {
   color: #3CA55C;
   text-decoration: none;
 }
-/* line 169, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .wrapper a:hover {
   color: #1a4828;
 }
 
 /***ABOUT SOMETHING***/
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 #about-something {
-  overflow: auto;
+  padding: 10px 0 20px;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 #about-something img {
   max-width: 175px;
   float: left;
@@ -158,9 +159,25 @@ section h2 {
   border-radius: 100%;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 #about-something p {
   float: right;
   width: 80%;
   padding: 40px 0;
+}
+
+/***MUSSUM QUOTE***/
+/* line 196, ../sass/style.scss */
+#mussum-quote {
+  background-color: #e6e6e6;
+  padding: 25px;
+}
+
+/* line 201, ../sass/style.scss */
+#mussum-quote blockquote {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  color: #b3b3b3;
 }

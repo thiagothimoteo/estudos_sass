@@ -154,6 +154,7 @@ section {
 	max-width: 960px;
 	margin: $center-margin;
 	padding: 20px;
+	overflow: auto;
 	@include border-radius;
 
 	h1 { text-align: center; }
@@ -173,7 +174,9 @@ section {
 
 /***ABOUT SOMETHING***/
 
-#about-something { overflow: auto; }
+#about-something { 
+	padding: 10px 0 20px;
+}
 
 #about-something img {
 	max-width: 175px;
@@ -186,4 +189,21 @@ section {
 	float: right;
 	width: 80%;
 	padding: 40px 0;
+}
+
+/***MUSSUM QUOTE***/
+
+#mussum-quote {
+	background-color: lighten(#000, 90%);
+	padding: 25px;
+}
+
+#mussum-quote blockquote {
+	font: {
+		family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		size: 30px;
+		style: italic;
+	}
+	text-align: center;
+	color: darken(#fff, 30%);
 }
